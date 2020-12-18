@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2? family = Frank + Ruhl + Libre: wght @ 300; 500; 700 & display = swap');
-@import url('https://fonts.googleapis.com/css2? family = Castoro & display = swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    font-family:  'Poppins', sans-serif;
     background-color: #121314;
     color: #ddd;  
-   font-family: 'Castoro', serif;
    width: 100%;
    height: auto;
 }
+
 .header{
-    font-family: 'Castoro', serif;
+    font-family:  'Poppins', sans-serif;
     color:#eee;
     font-weight: bold;
       position: relative;
@@ -23,8 +22,8 @@ body{
       
 }
 h1{
-    font-family: 'Castoro', serif;
-   font-size: 26px;
+    font-family:  'Poppins', sans-serif;
+
     visibility: hidden;
     display: inline-block;
 }
@@ -124,7 +123,7 @@ padding: 15px 0 0 10px;
       
   }
   .artista .artista__seguidor{
-      font-size: .9em;
+      font-size: .8em;
       margin: 1em 0;
   }
   .conexion{
@@ -147,14 +146,15 @@ border-radius: 2em;
 font-weight: bold;
 color: #fff;
 letter-spacing: 2px;
+font-family:  'Poppins', sans-serif;
   }
   .modo-aleatorio:hover{
      background: #1fe50b;
   }
   .conexion__mensaje{
       font-weight: bold;
-      font-family:'Frank Ruhl Libre', serif;
-      font-size: .9em;
+      font-family:  'Poppins', sans-serif;
+      font-size: .8em;
 
   }
  
@@ -213,7 +213,7 @@ letter-spacing: 2px;
   
 }
 .canciones__titulo{
-    
+    font-size: .8em;
     border-bottom: 1px solid;
     opacity: .5;
     padding: 0 0 0 10px;
@@ -222,7 +222,7 @@ letter-spacing: 2px;
 }
 .grupo__cancion ,.cancion__titulo, .cancion__artista ,.cancion__opciones{
 margin: 0;
-font-size: 1.1em;
+
 
 
 }
@@ -231,12 +231,12 @@ padding-top: 20px;
 
 }
 .cancion__artista{
-    font-size: .9em;
+    font-size: .8em;
     padding: 0 0 0 12px;
  
 }
 .cancion__titulo{
-    font-size: 1.1em;
+    font-size: 1.0em;
     padding: 0 0 0 12px;
    
 }
@@ -274,10 +274,10 @@ padding-left: 5px;
 }
 .reproductor__cancion{
 margin: 0;
-font-size: 1.1em;
+font-size: 1.0em;
 }
 .reproductor__artista{
-     font-size: .9em;
+     font-size: .8em;
 }
 
 [class^="far"]{
@@ -298,7 +298,7 @@ nav .menu-principal{
 
 }
 .menu li, a{
-    padding: 0 35px 0 0;
+    padding: 0 35px 6px 0;
 }
 #mini{
     position: absolute;
@@ -321,21 +321,21 @@ nav .menu-principal{
 #radio{
     position: absolute;
     left:79%;
-   top:50%;
+   top:51%;
     font-size: 14px;
 }
 #musica{
     position: absolute;
     font-size: 14px;
     left:80%;
-    top:66%;
+    top:68%;
     
 }
 #confi{
     position: absolute;
     font-size: 14px;
    left:80%;
-   top:85%;
+   top:84%;
     
 }
 
@@ -357,11 +357,13 @@ transition: all .2s;
     padding-top: 10px;
    
 }
-.menu a{
-    font-family:  'Castoro', serif;
+.menu li, a{
+    font-family:  'Poppins', sans-serif;
+    font-size: .9em;
 }
 
 .menu-principal li a{
+  
     display: block;
     color: #eee;
     line-height: 2em;
