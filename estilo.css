@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2? family = Frank + Ruhl + Libre: wght @ 300; 500; 700 & display = swap');
+@import url('https://fonts.googleapis.com/css2? family = Castoro & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #121314;
+    color: #ddd;  
+   font-family: 'Castoro', serif;
+   width: 100%;
+   height: auto;
+}
+.header{
+    font-family: 'Castoro', serif;
+    color:#eee;
+    font-weight: bold;
+      position: relative;
+      max-height: 100%;   
+    
+      
+}
+h1{
+    font-family: 'Castoro', serif;
+   font-size: 26px;
+    visibility: hidden;
+    display: inline-block;
+}
+h2{
+    font-size: 1em;
+}
+h3{font-size: .9em;
+}
+
+.top{
+  height: 3rem;
+  
+
+}
+.visible h1{
+    visibility: visible;
+}
+
+ .fondo{
+    position: absolute;
+    z-index: -1;
+   max-width: 200%;
+   left: 0;
+   right: 0;
+   bottom: 35%;
+   
+  
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+   
+}
+ .caja-base-30{
+grid-column: 7/-1;
+margin-top: 6px;
+
+}
+.caja-base-80{
+    padding: 0 0 0 20px;
+}
+
+
+
+
+
+  .mostrar-menu i {
+      color: #fff;
+      font-size: .9em;
+      
+  }
+  #spoty{
+   font-size: 25px;
+  visibility: hidden;
+  }
+  .caja-base-70{
+display: flex;
+justify-content: space-between;
+padding: 15px 0 0 10px;
+  }
+  .caja-base-20 i {
+      position: absolute;
+    bottom: 80px;
+    right: 40px;
+    font-size: .9em;
+    padding-top: .8em;
+      
+
+  }
+ 
+  .cabeza{
+     text-align: center;
+     
+  }
+ 
+  .artista img{
+      display: block;
+      width: 50%;
+      margin-left: 90px;
+      
+  }
+  .artista .nombre{
+      font-size: 1.5em;
+      margin-bottom: 0;
+      margin: 1em 0;
+  }
+  .artista .artista__seguir{
+      display: inline-block;
+      background: none;
+      border: 1px solid #eee;
+      height: 2em;
+      padding: 0 2em ;
+      border-radius: 1em;
+      background-color:#121314;
+      color: #fff;
+      text-transform: uppercase;
+      
+  }
+  .artista .artista__seguidor{
+      font-size: .9em;
+      margin: 1em 0;
+  }
+  .conexion{
+      max-width: 100%;
+      height: 85px;
+      background: #1c1c1f;
+      position: relative;
+      padding-top: 1em;
+     margin:0
+  }
+  
+ 
+  .modo-aleatorio{
+background: darkgreen;
+border: none;
+text-transform: uppercase;
+line-height: 3em;
+padding: 0 3em;
+border-radius: 2em;
+font-weight: bold;
+color: #fff;
+letter-spacing: 2px;
+  }
+  .modo-aleatorio:hover{
+     background: #1fe50b;
+  }
+  .conexion__mensaje{
+      font-weight: bold;
+      font-family:'Frank Ruhl Libre', serif;
+      font-size: .9em;
+
+  }
+ 
+
+  .derecha ,input[type=checkbox] {
+   margin-right: 40px;
+  }
+ #label{
+    display: block;
+      width: 3.1em;
+      height: 1.3em;
+      background-color: green;
+      border-radius: 1.25em;
+      transition: all .2s;
+     
+  }
+  #label:before{
+      content: "";
+      display: block;
+      position: relative;
+      width: 1.5em;
+      height: 1.4em;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow:  0 0 0 2px #999 inset;
+      transition: all .2s;
+     
+  }
+
+  
+  #toggle{
+      display: none;
+  }
+  #toggle:checked + #label:before{
+      content: "";
+      left: 1.55em;
+      
+      
+   
+  }
+  #toggle:checked + #label{
+    background-color: black;
+  }
+
+.grupo__cancion{
+    display: flex;
+    justify-content: space-between;
+      width: 90%;
+
+  }
+  [class^="fas fa"]{
+    font-size: 16px;
+    margin: 1em 0;
+    height: 100%;
+    
+  
+}
+.canciones__titulo{
+    
+    border-bottom: 1px solid;
+    opacity: .5;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+   
+}
+.grupo__cancion ,.cancion__titulo, .cancion__artista ,.cancion__opciones{
+margin: 0;
+font-size: 1.1em;
+
+
+}
+.canciones__titulo{
+padding-top: 20px;
+
+}
+.cancion__artista{
+    font-size: .9em;
+    padding: 0 0 0 12px;
+ 
+}
+.cancion__titulo{
+    font-size: 1.1em;
+    padding: 0 0 0 12px;
+   
+}
+.grupo__cancion{
+padding-top: 15px;
+position: relative;
+}
+footer{ 
+    width: 100%;    
+}
+.grupo-reproductor{
+    background:#0e0f10;
+    position: fixed;
+   bottom: 0;
+   border-top: 1px solid gray;
+}
+
+.caja-20 img{
+
+display: block;
+width: 25%;
+padding-left: 5px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.titulos{
+    padding-top: 10px;
+}
+.titulos, .reproductor__play{
+    margin: 0 60px 0 30px;
+}
+.reproductor__cancion{
+margin: 0;
+font-size: 1.1em;
+}
+.reproductor__artista{
+     font-size: .9em;
+}
+
+[class^="far"]{
+    font-size: 30px;
+     
+  
+}
+#heart{
+    color:lawngreen;
+}
+.menu{
+    position: relative;
+    
+    
+}
+nav .menu-principal{
+    padding:0 0 0 25px;
+
+}
+.menu li, a{
+    padding: 0 35px 0 0;
+}
+#mini{
+    position: absolute;
+    top:1%;
+   left:80%;
+   font-size: 14px;
+}
+#explorar{
+    position: absolute;
+    left:80%;
+  top:18%;
+  font-size: 14px;
+}
+#acti{
+    position: absolute;
+    left:80%;
+    top:34%;
+    font-size: 14px;
+}
+#radio{
+    position: absolute;
+    left:79%;
+   top:50%;
+    font-size: 14px;
+}
+#musica{
+    position: absolute;
+    font-size: 14px;
+    left:80%;
+    top:66%;
+    
+}
+#confi{
+    position: absolute;
+    font-size: 14px;
+   left:80%;
+   top:85%;
+    
+}
+
+.menu-principal{
+position: fixed;
+left: 0;
+top: 2rem;
+z-index: 20;
+background-color: #121314;
+transition: all .2s;
+
+
+}
+
+.menu li{
+    
+    list-style: none;
+    border-bottom: 1px solid#1c1c1f;
+    padding-top: 10px;
+   
+}
+.menu a{
+    font-family:  'Castoro', serif;
+}
+
+.menu-principal li a{
+    display: block;
+    color: #eee;
+    line-height: 2em;
+    text-decoration: none;
+    padding-right: 45px;
+}
+
+
+.mostrar-menu-principal{
+    left:-95%;
+  
+}
+
+/* media queries desktop */
+@media screen and (min-width:768px){
+    .header{
+        padding-top: 50px;
+    }
+    .top{
+        padding: 10px;
+    }
+    #spoty{
+        visibility: visible;
+        margin-top: 15px;
+    }
+ #box{
+     display: none;
+ }
+ .caja-base-80{
+display: none;
+ }
+ .menu-principal{   
+    position: inherit;
+   background-color: transparent;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   width: 100%;
+    
+    }
+    .menu-secundario li a{
+     
+        color: #eee;
+        }
+
+        .menu li{
+            border-bottom:transparent;
+            list-style: none;
+            
+            
+            
+           
+        }
+        .menu-principal li a{
+            display:inline-block;
+            color: #eee;
+            line-height: 0;
+            text-decoration: none;
+
+            
+        }
+        .menu a{
+            padding: 20px;
+            font-size: 1.1em;
+        }
+        .top{
+            height: 1rem;
+              
+          
+          }
+         
+ .fondo{
+    display: none;
+  
+}
+.artista img{
+  display: block;
+    width: 20%;
+  
+  
+    
+}
+.artistaa ,img{
+padding-left: 500px;
+}
+
+.artista .nombre{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+ 
+}
+
+.artista .artista__seguir{
+    display: inline-block;
+    background: none;
+    border: 1px solid #eee;
+    height: 2.1em;
+    padding: 0 3em ;
+    border-radius: 1em;
+    background-color:#121314;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.artista .artista__seguidor{
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+.menu> li> a:hover{
+    color: #1fe50b;
+    text-decoration-line:line-through ;
+}
+.caja-base-70{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+      }
+      footer{
+          width: 100%;
+      }
+      .grupo-reproductor{
+        background:#0e0f10;
+        position: inherit;
+       bottom: 0;
+       border-top: 1px solid gray;
+    }
+    .caja-20 {
+
+        display: block;
+        width: 25%;
+        padding-left: 0;
+        padding-left: 20px;
+
+        }
+        .caja-20  img{
+
+            display: block;
+            width: 35%;
+            padding-left: 5px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               
+            }
+            .titulos, .reproductor__play{
+                margin: 0 20px;
+            }
+            .reproductor__cancion{
+            margin: 0;
+            font-size: 1.4em;
+            }
+            .reproductor__artista{
+                 font-size: .9em;
+            }
+            
+            [class^="far"]{
+                font-size: 50px;
+                margin-left: 850px; 
+                
+              
+            }
+            .conexion__mensaje{
+                font-size: 1.1em;
+            }
+            .menu{
+                position:inherit;
+                
+            }
+            #mini{
+               position: inherit;
+            }
+            #explorar{
+                position: inherit;
+            }
+            #acti{
+                position: inherit;
+            }
+            #radio{
+                position: inherit;
+            }
+            #musica{
+                position: inherit;
+            }
+            #confi{
+                position: inherit;
+            }
+            nav .menu-principal{
+                padding:0;
+            
+            }
+            .menu li, a{
+                padding: 0;
+            }
+        }
